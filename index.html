@@ -5,6 +5,7 @@
 		<!-- Website Title & Description for Search Engine purposes -->
 		<!-- Keyword Garvit Garg and Garvit Profile is added -->
         <meta name="keyword" content="Garvit Garg,Garvit Profile">
+        <meta name="description" content="This is my first responsive website">
         <!-- Title of the webpage is set as Garvit Garg -->
         <title>Garvit Garg</title>
 		<!-- Mobile viewport optimized -->
@@ -16,12 +17,10 @@
 		<link href="includes/css/styles.css" rel="stylesheet">
 		<!-- Google dancip scrip font -->
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
 	
-		<div class="container" id="main">
+		<div class="container">
 			<!-- Navigation bar -->
 			<header class="navbar navbar-fixed-top">
 				<div class="container">
@@ -44,7 +43,22 @@
 							<li>
 								<a href="#contact">Contact</a>
 							</li>
-						</ul>	
+						</ul>
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>						
+									<li class="divider"></li>
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->	
 					</div><!-- end nav-collapse -->
 				</div><!-- end container -->
 			</header><!-- end navbar -->
@@ -166,11 +180,8 @@
 							</section><!-- end tab-pane -->
 							<!-- Second tab -->
 							<section class="tab-pane" id="tab2">
-								<!-- Alert Box when form is submitted. -->
 								<h4>Get In Touch</h4>
-								<!-- form in 2 tab -->
-									</div><a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="formModal" i><span class="glyphicon glyphicon-hand-up"></span>Fill Form!</a>
-								</form>	
+									<a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="formModal" i><span class="glyphicon glyphicon-hand-up"></span>Fill Form!</a>
 							</section><!-- end tab-pane -->
 							<div class="modal fade" id="myModal">
 								<div class="modal-dialog">
@@ -181,6 +192,7 @@
 										</div><!-- end modal-header -->
 										<div class="modal-body">
 											<h4>Fill out this form.</h4>
+											<!-- Alert Box when form is submitted. -->
 											<div class="alert alert-success alert-block fade in" id="successAlert">
 												<button type="button" class="close" data-dismiss="alert">&times;</button>
 												<h4>CONGRATULATIONS!!</h4>
