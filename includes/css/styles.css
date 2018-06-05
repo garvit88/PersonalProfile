@@ -1,0 +1,159 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features {
+   text-align: center;
+}
+#features img {
+   margin: 0 0 20px;
+}
+#about {
+   margin-top: 20px;
+}
+#about img{
+   height: 280px;
+   width: 420px;
+   margin: 60px 48px 20px 48px;
+}
+#vitButton {
+   margin-top: 22px;
+}
+#inputMessage {
+   margin-bottom: 15px;
+}
+#alertMe {
+   margin-bottom: 15px;
+}
+footer {
+   background: #333;
+   color: #eee;
+   font-size: 13px;
+   padding: 20px;
+}
+#footerNavigation {
+   padding-left: 50px;
+}
+ul.unstyled {
+   list-style: none;
+   padding: 0;
+}
+#socialMedia h6 {
+   padding-left: 50px;
+}
+#socialMedia li {
+   display: inline;
+   padding: 0;
+}
+#socialMedia img {
+   padding: 5px;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar-brand {
+      padding: 15px;
+   }
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel {
+   margin-top: 60px;
+   font-family: 'Dancing Script', cursive;
+}
+#myCarousel h4{
+   font-family: 'Dancing Script', cursive;
+}
+}
+#myCarousel .item {
+   height: 400px;
+}
+.carousel-caption h4 {
+   font-size: 32px;
+   padding : 100px 0 10px 0;
+}
+.carousel-caption {
+   font-size: 24px;
+}
+.carousel-caption p {
+   padding : 10px 0 20px 0;
+}
+.carousel-caption a {
+   margin-bottom: 50px;
+}
+#slide1 h4 {
+   margin-bottom: 150px;
+}
+#slide1 {
+   background: url('../../images/home-medium.jpg') top center no-repeat;
+}
+#slide2 {
+   background: url('../../images/about-medium.jpg') top center no-repeat;
+}
+#slide3 {
+   background: url('../../images/contact-medium.jpg') top center no-repeat;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert {
+   margin-top: 20px;
+   display: none;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   #about img{
+   height: 190px;
+   width: 270px;
+   }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+   #myCarousel .item {
+   height: 310px;
+   }
+   #slide1 {
+   background: url('../../images/home-small.jpg') top center no-repeat;
+   }
+   #slide2 {
+      background: url('../../images/about-small.jpg') top center no-repeat;
+   }
+   #slide3 {
+      background: url('../../images/contact-small.jpg') top center no-repeat;
+   }
+   .carousel-caption h4 {
+   font-size: 22px;
+   }
+   .carousel-caption {
+   font-size: 16px;
+   }   
+   #about img{
+   height: 200px;
+   width: 350px;
+   }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #myCarousel .item {
+   height: 500px;
+   }
+   #slide1 {
+   background: url('../../images/home-large.jpg') top center no-repeat;
+   }
+   #slide2 {
+      background: url('../../images/about-large.jpg') top center no-repeat;
+   }
+   #slide3 {
+      background: url('../../images/contact-large.jpg') top center no-repeat;
+   }
+}
