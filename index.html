@@ -23,7 +23,7 @@
 	
 		<div class="container" id="main">
 			<!-- Navigation bar -->
-			<div class="navbar navbar-fixed-top">
+			<header class="navbar navbar-fixed-top">
 				<div class="container">
 					<!-- This is used as the toggle for collapsed navbar content -->
 					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -47,10 +47,10 @@
 						</ul>	
 					</div><!-- end nav-collapse -->
 				</div><!-- end container -->
-			</div><!-- end navbar -->
+			</header><!-- end navbar -->
 
 			<!-- Carousel Section -->
-			<div class="carousel slide" id="myCarousel">
+			<section class="carousel slide" id="myCarousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -83,10 +83,10 @@
 				<!-- Left and Right Controls -->
 				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
 				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-			</div><!-- end myCarousel -->
+			</section><!-- end myCarousel -->
 			
 			<!-- About Me Section -->
-			<div class="jumbotron" id="about">
+			<section class="jumbotron" id="about">
 				<div class="row">
 					<div class="col-sm-7">
 						<!-- Page Header -->
@@ -96,11 +96,11 @@
 						<!-- Paragraph section -->
 						<p class="lead">I am from Faridabad, Haryana. I graduated from Vellore Institue of Technology, Vellore. I was there from 2014 - 2018. I have done my 5 months internship in The Data Team as a role of Data Engineering intern where i developed testing framework for our appliction in Java. Now, i am undergoing the training for Full Stack Developer from Stackroute and after that i will be joining Boeing.</p>
 					</div> <!-- end col-sm-7 -->
-					<div class="col-sm-3">
+					<div class="col-sm-5">
 						<img src="images/Photo.JPG" alt="Garvit Garg" class="img-rounded">
 					</div> <!-- end col-sm-5 -->
 				</div>
-			</div>
+			</section>
 
 			<!-- Background Section -->
 			<div class="row" id="featuresHeading">
@@ -112,7 +112,7 @@
 
 			<!-- 3 panels for introduction -->
 			<div class="row" id="features">
-				<div class="col-sm-4 feature">
+				<section class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
 							<h3 class="panel-title">GRADUATION</h3>
@@ -121,9 +121,9 @@
 						<p>I have completed by B.Tech in Information Technology from VIT University, Vellore from 2014 - 2018.</p>
 						<a href="http://www.vit.ac.in/" target="_blank" class="btn btn-info btn-block" id="vitButton">Learn more about VIT</a>
 					</div><!-- end panel -->
-				</div><!-- end feature -->
+				</section><!-- end feature -->
 		
-				<div class="col-sm-4 feature">
+				<section class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
 							<h3 class="panel-title">INTERNSHIP</h3>
@@ -132,9 +132,9 @@
 						<p>I have done my 5 months internship in the The Data Team. I was working there as a data engineering intern and developed a testing framework.</p>
 						<a href="http://www.thedatateam.in/" target="_blank" class="btn btn-info btn-block">Learn more about TDT</a>
 					</div><!-- end panel -->
-				</div><!-- end feature -->
+				</section><!-- end feature -->
 		
-				<div class="col-sm-4 feature">
+				<section class="col-sm-4 feature">
 					<div class="panel">
 						<div class="panel-heading">
 							<h3 class="panel-title">TRAINING</h3>
@@ -143,11 +143,11 @@
 						<p>I am cuurently undergoing three months of training by Stackroute which prepares us for the role of Full Stack Developer.</p>
 						<a href="http://stackroute.in/" target="_blank" class="btn btn-info btn-block">Learn more about Stackroute</a>
 					</div><!-- end panel -->
-				</div><!-- end feature -->
+				</section><!-- end feature -->
 			</div><!-- end features -->
 			
 			<!-- Contact Section-->
-			<div class="row" id="contact">
+			<section class="row" id="contact">
 				<div class="col-sm-12">
 					<h3>Contact</h3>
 					<div class="tabbable">
@@ -158,42 +158,65 @@
 						</ul>
 						<div class="tab-content">
 							<!-- First tab -->
-							<div class="tab-pane active" id="tab1">
+							<section class="tab-pane active" id="tab1">
 								<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>Stackroute, Kormangla</small></h4>
 
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5691276161538!2d77.61174604976947!3d12.935391519128384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e0c7d418f%3A0x48d008360cebcde4!2sStackroute!5e0!3m2!1sen!2sin!4v1528136374816" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 								<p>You can find me at above Location.</p>
-							</div><!-- end tab-pane -->
+							</section><!-- end tab-pane -->
 							<!-- Second tab -->
-							<div class="tab-pane" id="tab2">
+							<section class="tab-pane" id="tab2">
 								<!-- Alert Box when form is submitted. -->
-								<div class="alert alert-success alert-block fade in" id="successAlert">
-									<button type="button" class="close" data-dismiss="alert">&times;</button>
-									<h4>CONGRATULATIONS!!</h4>
-									<p>You form has been submitted. We will get back to you soon.</p>
-								</div>
 								<h4>Get In Touch</h4>
 								<!-- form in 2 tab -->
-								<form>
-									<div class="form-group">
-		    							<label for="name">Name</label>
-		    							<input type="text" class="form-control" id="name" placeholder="Name">
-		  							</div>
-		  							<div class="form-group">
-		    							<label for="email">Email</label>
-		    							<input type="email" class="form-control" id="email" placeholder="Email">
-		  							</div>
-		  							<div class="form-group">
-										<label for="inputMessage">Message</label>
-										<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-										<a href="" class="btn btn-success pull-right" id="alertMe">Send</a>
-									</div>
+									</div><a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="formModal" i><span class="glyphicon glyphicon-hand-up"></span>Fill Form!</a>
 								</form>	
-							</div><!-- end tab-pane -->
+							</section><!-- end tab-pane -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Contact Me - Form</h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<h4>Fill out this form.</h4>
+											<div class="alert alert-success alert-block fade in" id="successAlert">
+												<button type="button" class="close" data-dismiss="alert">&times;</button>
+												<h4>CONGRATULATIONS!!</h4>
+												<p>You form has been submitted. We will get back to you soon.</p>
+											</div>
+											<hr>
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+													<input class="form-control" id="inputName" placeholder="Name" type="text">
+												</div>
+												</div>
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+														<button class="btn btn-success pull-right" type="submit" id="alertMe">Send!</button>
+													</div>
+												</div>
+											</form>
+										</div><!-- end modal-body -->
+			
+									</div><!-- end modal-content -->
+								</div><!-- end modal-dialog -->
+							</div><!-- end myModal -->
 						</div><!-- end tab-content -->
 					</div><!-- end tabbable -->
 				</div><!-- end col-sm-12 -->
-			</div><!--  end contact section -->
+			</section><!--  end contact section -->
 		</div><!-- end container -->
 
 		<!-- Footer -->
